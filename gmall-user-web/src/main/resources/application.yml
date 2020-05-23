@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  dubbo:
+    application:
+      name: user-web
+    registry:
+      protocol: zookeeper
+      address: 192.168.0.101:2181
+    base-package: com.lpg.gmall
+    protocol:
+      name: dubbo
+    consumer:
+      timeout: 10000
+      check: false
